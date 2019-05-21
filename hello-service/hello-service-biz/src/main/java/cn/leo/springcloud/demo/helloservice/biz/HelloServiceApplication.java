@@ -1,4 +1,4 @@
-package cn.leo.springcloud.demo.helloservice;
+package cn.leo.springcloud.demo.helloservice.biz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

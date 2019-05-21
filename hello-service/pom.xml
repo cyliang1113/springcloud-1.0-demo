@@ -6,7 +6,9 @@
 
     <groupId>cn.leo.springcloud.demo</groupId>
     <artifactId>hello-service</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
 
     <parent>
         <groupId>cn.leo.springcloud.demo</groupId>
@@ -14,37 +16,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <dependencies>
-        <!-- spring boot -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-sleuth</artifactId>
-        </dependency>
-    </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>1.4.2.RELEASE</version>
-            </plugin>
-        </plugins>
-    </build>
+    <modules>
+        <module>hello-service-api</module>
+        <module>hello-service-biz</module>
+    </modules>
 
 
 </project>

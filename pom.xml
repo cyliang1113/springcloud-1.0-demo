@@ -19,6 +19,7 @@
         <module>eureka</module>
         <module>gateway</module>
         <module>hello-service</module>
+        <module>user-service</module>
 
     </modules>
 
