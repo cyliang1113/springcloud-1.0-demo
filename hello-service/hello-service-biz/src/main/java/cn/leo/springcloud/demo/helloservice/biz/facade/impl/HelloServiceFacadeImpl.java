@@ -33,4 +33,10 @@ public class HelloServiceFacadeImpl implements HelloServiceFacade {
         log.info(helloTime.getTime().toString());
         return helloTime;
     }
+
+    @Override
+    public String returnError() {
+        int i = 1 / 0;
+        return "error";
+    }
 }

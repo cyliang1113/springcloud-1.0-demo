@@ -22,11 +22,13 @@ public class UserFacadeImpl implements UserFacade {
 //        log.info("sayHello(): " + s);
 //        String s1 = helloServiceFacade.helloTime(new Date(), new Date());
 //        log.info("helloTime(): " + s1);
-        HelloTime helloTimeReq = new HelloTime();
-        helloTimeReq.setTime(new Date());
-        log.info(helloTimeReq.getTime().toString());
-        HelloTime helloTime = helloServiceFacade.helloTime(helloTimeReq);
-        log.info(helloTime.getTime().toString());
+//        HelloTime helloTimeReq = new HelloTime();
+//        helloTimeReq.setTime(new Date());
+//        log.info(helloTimeReq.getTime().toString());
+//        HelloTime helloTime = helloServiceFacade.helloTime(helloTimeReq);
+//        log.info(helloTime.getTime().toString());
+        helloServiceFacade.returnError();
         return "Tom";
     }
+
 }

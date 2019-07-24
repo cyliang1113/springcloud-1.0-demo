@@ -26,4 +26,7 @@ public interface HelloServiceFacade {
     HelloTime helloTime(
             @RequestBody HelloTime req
     );
+
+    @RequestMapping(value = "/returnError", method = RequestMethod.GET)
+    String returnError();
 }
