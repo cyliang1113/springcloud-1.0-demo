@@ -7,7 +7,12 @@
     <groupId>cn.leo.springcloud.demo</groupId>
     <artifactId>springcloud-1.0-demo</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${project.version}</version>
+
+    <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+    </properties>
+
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -20,7 +25,6 @@
         <module>gateway</module>
         <module>hello-service</module>
         <module>user-service</module>
-
     </modules>
 
     <dependencyManagement>
